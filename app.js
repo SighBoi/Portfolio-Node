@@ -39,3 +39,6 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
+
+app.use(express.static(__dirname + '/node_modules/bootstrap/dist'));
+app.use(express.static(path.join(__dirname, 'public')));
